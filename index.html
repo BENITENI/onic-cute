@@ -44,7 +44,7 @@
         <div class="hero-actions">
           <a href="https://t.me/oniccute_bot" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer">
             <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.12-.31-1.08-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"/>
+              <path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.48-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.68-6.02c.73-.27 1.37.17 1.15 1.28l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/>
             </svg>
             Перейти в Telegram
           </a>
@@ -76,17 +76,33 @@
       </div>
       <div class="features">
         <article class="feature-card">
-          <div class="feature-icon">📱</div>
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.48-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.68-6.02c.73-.27 1.37.17 1.15 1.28l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/>
+            </svg>
+          </div>
           <h3>Telegram-бот</h3>
           <p>Каталог, консультация и быстрый переход к товару — в @oniccute_bot</p>
         </article>
         <article class="feature-card">
-          <div class="feature-icon">🛍️</div>
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2h12l1 5H5L6 2z"/>
+              <path d="M5 7l-1 13h16L19 7"/>
+              <path d="M9 11v6M15 11v6"/>
+            </svg>
+          </div>
           <h3>Wildberries</h3>
           <p>Официальные карточки товаров на маркетплейсе — надёжная доставка по всей России</p>
         </article>
         <article class="feature-card">
-          <div class="feature-icon">👶</div>
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="4"/>
+              <path d="M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/>
+              <path d="M9.5 11.5c.8-.5 1.7-.8 2.5-.8s1.7.3 2.5.8"/>
+            </svg>
+          </div>
           <h3>Для малышей</h3>
           <p>Мягкие ткани, аккуратный крой и любимый клетчатый принт в нежных оттенках</p>
         </article>
@@ -133,7 +149,7 @@
               <span class="step-num">1</span>
               <div>
                 <strong>Откройте бот</strong>
-                <p>Нажмите кнопку ниже или найдите @oniccute_bot в Telegram</p>
+                <p>Нажмите кнопку ниже или найдите @oniccute_bot в Telegram, или отсканируйте QR-код</p>
               </div>
             </li>
             <li>
@@ -155,11 +171,18 @@
             Открыть @oniccute_bot
           </a>
         </div>
-        <div class="order-deco" aria-hidden="true">
-          <div class="wb-badge">
-            <span class="wb-logo">WB</span>
-            <span>Wildberries</span>
-          </div>
+        <div class="order-deco">
+          <a href="https://t.me/oniccute_bot" class="bot-qr-card" target="_blank" rel="noopener noreferrer">
+            <img
+              src="assets/bot-qr.png"
+              width="180"
+              height="180"
+              alt="QR-код Telegram-бота @oniccute_bot"
+              class="bot-qr-img"
+            />
+            <span class="bot-qr-label">@oniccute_bot</span>
+            <span class="bot-qr-hint">Сканируйте камерой телефона</span>
+          </a>
         </div>
       </div>
     </section>
